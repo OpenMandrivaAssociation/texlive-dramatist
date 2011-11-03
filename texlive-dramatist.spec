@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/dramatist
+# catalog-date 2006-12-01 14:16:52 +0100
+# catalog-license gpl
+# catalog-version 1.2d
 Name:		texlive-dramatist
 Version:	1.2d
 Release:	1
@@ -50,6 +56,7 @@ personae' list.
 #- source
 %doc %{_texmfdistdir}/source/latex/dramatist/dramatist.dtx
 %doc %{_texmfdistdir}/source/latex/dramatist/dramatist.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ personae' list.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
