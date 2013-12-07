@@ -6,7 +6,7 @@
 # catalog-version 1.2d
 Name:		texlive-dramatist
 Version:	1.2d
-Release:	2
+Release:	3
 Summary:	Typeset dramas, both in verse and in prose
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dramatist
