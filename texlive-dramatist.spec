@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/dramatist
-# catalog-date 2006-12-01 14:16:52 +0100
-# catalog-license gpl
-# catalog-version 1.2d
 Name:		texlive-dramatist
-Version:	1.2d
-Release:	10
+Version:	1.2e
+Release:	1
 Summary:	Typeset dramas, both in verse and in prose
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dramatist
@@ -37,15 +31,10 @@ personae' list.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/dramatist/dramatist.sty
-%doc %{_texmfdistdir}/doc/latex/dramatist/README
-%doc %{_texmfdistdir}/doc/latex/dramatist/dramatist.pdf
-%doc %{_texmfdistdir}/doc/latex/dramatist/marlowe-poemscol.tex
-%doc %{_texmfdistdir}/doc/latex/dramatist/marlowe-verse.tex
-%doc %{_texmfdistdir}/doc/latex/dramatist/schiller.tex
+%{_texmfdistdir}/tex/latex/dramatist
+%doc %{_texmfdistdir}/doc/latex/dramatist
 #- source
-%doc %{_texmfdistdir}/source/latex/dramatist/dramatist.dtx
-%doc %{_texmfdistdir}/source/latex/dramatist/dramatist.ins
+%doc %{_texmfdistdir}/source/latex/dramatist
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,17 +45,3 @@ personae' list.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2d-2
-+ Revision: 751088
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2d-1
-+ Revision: 718260
-- texlive-dramatist
-- texlive-dramatist
-- texlive-dramatist
-- texlive-dramatist
-
