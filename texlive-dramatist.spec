@@ -1,13 +1,13 @@
 Name:		texlive-dramatist
-Version:	1.2e
-Release:	2
+Version:	35866
+Release:	1
 Summary:	Typeset dramas, both in verse and in prose
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dramatist
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +22,12 @@ stage directions; and automatic generation of a `dramatis
 personae' list.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,7 +38,8 @@ personae' list.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
