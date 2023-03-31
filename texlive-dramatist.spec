@@ -1,6 +1,6 @@
 Name:		texlive-dramatist
 Version:	35866
-Release:	1
+Release:	2
 Summary:	Typeset dramas, both in verse and in prose
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dramatist
