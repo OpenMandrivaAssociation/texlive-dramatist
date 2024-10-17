@@ -3,7 +3,7 @@ Version:	35866
 Release:	2
 Summary:	Typeset dramas, both in verse and in prose
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dramatist
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/dramatist
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dramatist.doc.r%{version}.tar.xz
